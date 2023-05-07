@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PatientHomePagePack.MyAppointmentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:id="@+id/headingMyAppointments"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:text="My Appointments"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"-->
+<!--            android:background="@color/purple_700"-->
+<!--            android:paddingTop="20dp"-->
+<!--            android:paddingLeft="10dp"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:id="@+id/recyclerViewMyAppointment"
+            />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

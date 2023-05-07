@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="1dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#ffffff">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:id="@+id/cardImageView"-->
+<!--            app:cardCornerRadius="60dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="20dp">-->
+<!--        -->
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/cardImageView"
+            android:text="Patient Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feed_text"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/cardImageView"
+            android:layout_below="@+id/textView_name"
+            android:text="It was a good experience.He is patiently listening to all the problems."
+            android:maxLines="2"
+            android:textSize="13sp"
+            tools:ignore="NotSibling" />
+<!--        <Button-->
+<!--            android:id="@+id/seeMoreButton"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:textSize="8sp"-->
+<!--            android:layout_marginLeft="270dp"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:text="See More" />-->
+
+<!--        <RatingBar-->
+<!--            android:id="@+id/rate"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:textColor="#A8A0A0"-->
+<!--            android:layout_marginLeft="20dp"-->
+
+<!--            android:layout_below="@+id/textView_name"-->
+<!--            android:text="It was a good experience.He is patiently listening to all the problems."-->
+<!--            android:layout_toRightOf="@+id/textView_name"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_call"-->
+<!--            android:layout_width="49dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_toRightOf="@+id/feedback_button"-->
+
+<!--            android:background="@drawable/ic_call"-->
+<!--            tools:ignore="SpeakableTextPresentCheck" />-->
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

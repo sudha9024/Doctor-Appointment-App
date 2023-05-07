@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+    <item
+        android:id="@+id/mydoctors"
+        android:title="My Doctors"
+        android:icon="@drawable/baseline_groups_24"/>
+    <item
+        android:id="@+id/myappointments"
+        android:title="My Appointments"
+        android:icon="@drawable/baseline_calendar_month_24"/>
+    <item
+        android:id="@+id/prescriptions"
+        android:title="Prescriptions"
+        android:icon="@drawable/baseline_note_add_24"/>
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"/>
+</menu>

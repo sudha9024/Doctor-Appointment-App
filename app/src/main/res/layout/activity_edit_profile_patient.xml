@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientHomePagePack.edit_profile_patient"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="@color/light_blue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/light_blue"
+
+                />
+
+            <ImageView
+                android:layout_width="159dp"
+                android:layout_height="150dp"
+                android:id="@+id/Patient_image"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/baseline_person_24"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Patient Name"
+                android:id="@+id/name"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_light_background"
+                android:id="@+id/phone"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Weight"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_light_background"
+                android:id="@+id/weight"
+                android:drawableLeft="@drawable/baseline_monitor_weight_24" />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/saveButton"
+                android:text="Save"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/light_blue"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </ScrollView></LinearLayout>

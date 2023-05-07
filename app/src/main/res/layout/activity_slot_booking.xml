@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientHomePagePack.SlotBooking">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectDateTV"
+            android:text="Select date:"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="start"
+            android:layout_margin="8dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateRecyclerView"
+            android:layout_margin="8dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectTimeTV"
+            android:text="Select Time:"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="start"
+            android:layout_margin="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSlotBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/message_for_slot_time_status"
+            android:text="All slots are full for this day :("
+            android:textSize="18sp"
+            android:textColor="#F33343"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slot_book_btn"
+            android:text="Book Appointment"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/light_blue"/>
+    </LinearLayout>
+
+</ScrollView>

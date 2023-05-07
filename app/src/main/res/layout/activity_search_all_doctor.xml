@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1CDE6"
+    tools:context=".PatientHomePagePack.SearchAllDoctor">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/doctorsearch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="646dp"
+
+        android:background="@drawable/edittext_search_background"
+
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+
+        android:textStyle="italic"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Search Here..."
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doctorsearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

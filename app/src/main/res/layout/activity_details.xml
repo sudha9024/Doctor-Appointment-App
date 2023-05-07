@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:backgroundTint="@color/light_blue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="423dp"
+            android:layout_height="655dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Register"
+                android:textColor="@color/light_blue"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                app:startIconDrawable="@drawable/baseline_person_outline_24"
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                app:startIconDrawable="@drawable/baseline_person_24"
+                android:padding="5dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:outlineProvider="background"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableRight="@drawable/baseline_visibility_off_24"
+                    android:inputType="textPassword"
+                    android:longClickable="false"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm password"
+                android:longClickable="false"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableRight="@drawable/baseline_visibility_24"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="DOB"
+                app:startIconDrawable="@drawable/baseline_date_range_24"
+                android:padding="5dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Gender"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/gender"
+                app:startIconDrawable="@drawable/baseline_bloodtype_24"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/autogender"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:hint="Phone"
+                app:startIconDrawable="@drawable/baseline_phone_24"
+                android:padding="5dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Choose Your Role"
+                android:layout_marginLeft="5dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Specialization"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/invite"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/special"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Blood Type"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bloodgroup"
+                app:startIconDrawable="@drawable/baseline_bloodtype_24"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/blood"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Experience."
+                app:startIconDrawable="@drawable/baseline_explicit_24"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/exp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Weight"
+                app:startIconDrawable="@drawable/baseline_monitor_weight_24"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/weight"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/fee"
+                android:hint="Fees"
+                app:startIconDrawable="@drawable/baseline_money_24"
+                android:padding="5dp"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_fees"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Building No."
+                app:startIconDrawable="@drawable/baseline_holiday_village_24"
+                android:padding="5dp"
+                android:id="@+id/building"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_build"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Street"
+                app:startIconDrawable="@drawable/baseline_streetview_24"
+                android:padding="5dp"
+                android:id="@+id/street"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="City"
+                app:startIconDrawable="@drawable/baseline_location_city_24"
+                android:padding="5dp"
+                android:id="@+id/city"
+                android:visibility="gone">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="Country"
+                android:padding="5dp"
+                android:id="@+id/country"
+                app:startIconDrawable="@drawable/baseline_edit_location_24"
+                android:visibility="gone"
+             >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="3dp"
+                android:hint="PinCode"
+                android:padding="5dp"
+                app:startIconDrawable="@drawable/baseline_fiber_pin_24"
+                android:id="@+id/pincode"
+                android:visibility="gone"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Edi_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_light_background" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Clinic time From"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/layoutFrom"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoFrom"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:hint="Clinic time To"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/LayoutTo"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoTo"
+                    android:layout_width="359dp"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

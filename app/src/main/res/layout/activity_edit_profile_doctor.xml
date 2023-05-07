@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorHomePagePack.edit_profile_doctor"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="@color/light_blue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/light_blue"
+                />
+
+            <ImageView
+                android:layout_width="159dp"
+                android:layout_height="150dp"
+                android:id="@+id/doctorEditProfile_image"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/baseline_person_24"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Doctor Name"
+                android:id="@+id/Edi_name"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone"
+                android:id="@+id/Edi_phone"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Gender"
+                android:id="@+id/Edi_gender"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Experience"
+                android:id="@+id/Edi_exp"
+                android:drawableLeft="@drawable/baseline_explicit_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Fees"
+                android:id="@+id/Edi_fees"
+                android:drawableLeft="@drawable/baseline_money_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Building No."
+                android:id="@+id/Edi_build"
+                android:drawableLeft="@drawable/baseline_holiday_village_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Street"
+                android:id="@+id/Edi_street"
+                android:drawableLeft="@drawable/baseline_streetview_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="City"
+                android:id="@+id/Edi_city"
+                android:drawableLeft="@drawable/baseline_location_city_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:hint="Doctor Name"-->
+<!--                android:id="@+id/Edi_state"-->
+<!--                android:drawableLeft="@drawable/baseline_person_outline_24"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                />-->
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Country"
+                android:id="@+id/Edi_country"
+                android:drawableLeft="@drawable/baseline_edit_location_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Pincode"
+                android:id="@+id/Edi_pincode"
+                android:drawableLeft="@drawable/baseline_fiber_pin_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/save_doctor_detail"
+                android:text="Save"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/light_blue"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
